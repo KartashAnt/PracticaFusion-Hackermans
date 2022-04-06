@@ -2,7 +2,7 @@ package paquetePrincipal;
 
 public class Mascota {
 	private String nombre;
-
+	private String color;
 	public Mascota(String nombre) {
 		this.nombre = nombre;
 
@@ -17,7 +17,15 @@ public class Mascota {
 	}
 
 	public void MandarMensaje() {
-		System.out.println("Soy " + this.nombre + " y te voy a contar algo o no");
+		System.out.println("Hola equipo! Soy " + this.nombre + " y te voy a contar algo o no. Soy de color " +this.color);
 	}
 
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
 }
