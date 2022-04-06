@@ -2,6 +2,8 @@ package paquetePrincipal;
 
 public class Mascota {
 	private String nombre;
+	
+	private double tamanio;
 
 	public Mascota(String nombre) {
 		this.nombre = nombre;
@@ -17,7 +19,15 @@ public class Mascota {
 	}
 
 	public void MandarMensaje() {
-		System.out.println("Soy " + this.nombre + " y te voy a contar algo o no");
+		System.out.println("Soy " + this.nombre + " y te voy a contar algo o, no ademas soy del tamanio "+this.tamanio);
+	}
+
+	public double getTamanio() {
+		return tamanio;
+	}
+
+	public void setTamanio(double tamanio) {
+		this.tamanio = tamanio;
 	}
 
 }
