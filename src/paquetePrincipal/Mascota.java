@@ -3,6 +3,16 @@ package paquetePrincipal;
 public class Mascota {
 	private String nombre;
 	private String color;
+	private int edad;
+
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
 	public Mascota(String nombre) {
 		this.nombre = nombre;
 
